@@ -230,7 +230,102 @@ span.zap-button:visited{
 }
 
 .linha {
-  width: 120px;        
-  height: 30px;
-  background-color: #ff7a00;
+  width: 180px;        
+  height: 4px;
+  background-color: #c51d1d;
+}
+
+/* Imagem background */
+.Main-Page-Banner {
+    background-image: url('../IMG/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.LandingPage-Gas-image {
+    text-align: center;
+    color: white;
+}
+
+.Main-Page-Display-Title {
+    font-size: clamp(36px, 8vw, 64px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'montserrat', sans-serif;
+
+}
+
+.Main-Page-Subtitle {
+    font-size: clamp(18px, 4vw, 28px);
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.Main-Page-Subtitle-2 {
+    font-size: clamp(18px, 4vw, 28px);
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* Botão Whatsapp */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.45),
+       -1px -1px 2px rgba(0, 0, 0, 0.45),
+        1px -1px 2px rgba(0, 0, 0, 0.45),
+       -1px 1px 2px rgba(0, 0, 0, 0.45);
+
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+    transition: all 0.25s ease;
+
+    background-color: #25D366;
+    color: #ffffff;
+
+    padding: 14px 28px;
+    border-radius: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+    transition: all 0.25s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(37, 211, 102, 0.45);
+}
+
+.btn-whatsapp-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Portabilidade para celular do menu */
+@media (max-width: 768px) {
+    .btn-whatsapp {
+        font-size: 16px;
+        padding: 12px 22px;
+    }
 }
