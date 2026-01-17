@@ -227,6 +227,7 @@ span.zap-button:visited{
   text-align: center;
   font-size: clamp(22px, 4vw, 34px);
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .linha {
@@ -286,12 +287,6 @@ span.zap-button:visited{
     align-items: center;
     gap: 10px;
 
-    text-shadow:
-        1px 1px 2px rgba(0, 0, 0, 0.45),
-       -1px -1px 2px rgba(0, 0, 0, 0.45),
-        1px -1px 2px rgba(0, 0, 0, 0.45),
-       -1px 1px 2px rgba(0, 0, 0, 0.45);
-
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
     transition: all 0.25s ease;
 
@@ -328,4 +323,118 @@ span.zap-button:visited{
         font-size: 16px;
         padding: 12px 22px;
     }
+}
+
+.Gas-Image-Container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.Gas-Image-Container h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Gas-Image-Container p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Vantagens Grid */
+
+.vantagens {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.vantagens h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+
+}
+
+.vantagens-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card img {
+  width: 70px;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card p {
+  font-size: 19px;
+  color: #666;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 4º card começa na coluna 2 */
+.vantagens-grid .card:nth-child(4) {
+  grid-column: 1;
+}
+
+/* 5º card começa na coluna 3 */
+.vantagens-grid .card:nth-child(5) {
+  grid-column: 2;
+}
+
+.card img {
+  transition: transform 0.25s ease;
+}
+
+.card:hover img {
+  transform: translateY(-4px);
+}
+
+
+/* Responsividade Vantagens Grid */
+@media (max-width: 768px) {
+  .vantagens-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .vantagens-grid .card {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .linha {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Gas-Image-Container h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .Gas-Image-Container p {
+    font-size: 17px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
 }
