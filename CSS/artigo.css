@@ -1,0 +1,572 @@
+/* ============================================
+   JW GÁS - ARTIGO CSS
+   ============================================ */
+
+/* ============================================
+   BREADCRUMB
+   ============================================ */
+.breadcrumb {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumb a {
+    color: var(--azul-primario);
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--vermelho-primario);
+}
+
+.breadcrumb i.fa-chevron-right {
+    font-size: 0.7rem;
+    color: var(--cinza-texto);
+}
+
+.breadcrumb span {
+    color: var(--cinza-texto);
+}
+
+/* ============================================
+   ARTIGO MAIN
+   ============================================ */
+.artigo-main {
+    padding: 40px 20px 60px;
+}
+
+/* ============================================
+   CONTAINER DO ARTIGO
+   ============================================ */
+.artigo-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   HEADER DO ARTIGO
+   ============================================ */
+.artigo-header {
+    padding: 50px 50px 30px;
+    text-align: center;
+}
+
+.artigo-categoria {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--azul-primario), var(--azul-secundario));
+    color: white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.artigo-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    color: var(--cinza-escuro);
+    line-height: 1.2;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.artigo-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+}
+
+.artigo-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.artigo-meta i {
+    color: var(--vermelho-primario);
+}
+
+/* ============================================
+   IMAGEM PRINCIPAL
+   ============================================ */
+.artigo-imagem-principal {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.artigo-imagem-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================
+   CONTEÚDO DO ARTIGO
+   ============================================ */
+.artigo-conteudo {
+    padding: 50px;
+}
+
+.artigo-intro {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--cinza-escuro);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    border-radius: 16px;
+    border-left: 5px solid var(--azul-primario);
+    letter-spacing: 0.5px;
+}
+
+.artigo-conteudo h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--cinza-escuro);
+    margin: 40px 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 1px;
+}
+
+.artigo-conteudo h2 i {
+    color: var(--azul-primario);
+    font-size: 1.4rem;
+}
+
+.artigo-conteudo h2:nth-of-type(even) i {
+    color: var(--vermelho-primario);
+}
+
+.artigo-conteudo p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.15rem;
+    color: var(--cinza-texto);
+    line-height: 1.9;
+    margin-bottom: 20px;
+    letter-spacing: 0.3px;
+}
+
+/* ============================================
+   DESTAQUE
+   ============================================ */
+.artigo-destaque {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    border-radius: 16px;
+    margin: 30px 0;
+    border-left: 5px solid #f59e0b;
+}
+
+.artigo-destaque i {
+    font-size: 2rem;
+    color: #f59e0b;
+    flex-shrink: 0;
+}
+
+.artigo-destaque p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #92400e;
+}
+
+/* ============================================
+   LISTAS
+   ============================================ */
+.artigo-lista {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.artigo-lista h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--cinza-escuro);
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.artigo-lista ul {
+    list-style: none;
+}
+
+.artigo-lista li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: var(--cinza-texto);
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    letter-spacing: 0.3px;
+}
+
+.artigo-lista li:last-child {
+    border-bottom: none;
+}
+
+.artigo-lista li i {
+    color: var(--vermelho-primario);
+    font-size: 1rem;
+}
+
+.artigo-lista-ordenada {
+    list-style: none;
+    counter-reset: item;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.artigo-lista-ordenada li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: var(--cinza-texto);
+    padding: 15px 0 15px 60px;
+    position: relative;
+    border-bottom: 1px solid #e2e8f0;
+    counter-increment: item;
+    letter-spacing: 0.3px;
+}
+
+.artigo-lista-ordenada li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--azul-primario), var(--azul-secundario));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.artigo-lista-ordenada li:nth-child(even)::before {
+    background: linear-gradient(135deg, var(--vermelho-primario), var(--vermelho-secundario));
+}
+
+/* ============================================
+   CTA DO ARTIGO
+   ============================================ */
+.artigo-cta {
+    background: linear-gradient(135deg, var(--vermelho-primario), #b91c1c);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.artigo-cta h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.artigo-cta h3 i {
+    margin-right: 10px;
+}
+
+.artigo-cta p {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.artigo-cta .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    color: var(--vermelho-primario);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.artigo-cta .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   TAGS
+   ============================================ */
+.artigo-tags {
+    padding: 30px 50px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: var(--cinza-escuro);
+    letter-spacing: 0.5px;
+}
+
+.artigo-tags .tag {
+    padding: 8px 18px;
+    background: #f1f5f9;
+    color: var(--cinza-texto);
+    border-radius: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+}
+
+.artigo-tags .tag:hover {
+    background: var(--azul-primario);
+    color: white;
+}
+
+/* ============================================
+   COMPARTILHAR
+   ============================================ */
+.artigo-compartilhar {
+    padding: 30px 50px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.artigo-compartilhar span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    color: var(--cinza-escuro);
+    letter-spacing: 0.5px;
+}
+
+.share-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.share-btn.whatsapp {
+    background: #25d366;
+}
+
+.share-btn.facebook {
+    background: #1877f2;
+}
+
+.share-btn.twitter {
+    background: #1da1f2;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   ARTIGOS RELACIONADOS
+   ============================================ */
+.artigos-relacionados {
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.artigos-relacionados .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--cinza-escuro);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 1px;
+}
+
+.artigos-relacionados .section-title::before {
+    content: '';
+    width: 5px;
+    height: 30px;
+    background: linear-gradient(180deg, var(--azul-primario), var(--vermelho-primario));
+    border-radius: 3px;
+}
+
+.relacionados-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.relacionado-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.relacionado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.relacionado-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.relacionado-content {
+    padding: 20px;
+}
+
+.relacionado-content .categoria {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    color: var(--vermelho-primario);
+    letter-spacing: 1px;
+}
+
+.relacionado-content h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    color: var(--cinza-escuro);
+    margin-top: 8px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 768px) {
+    .artigo-header {
+        padding: 30px 25px 20px;
+    }
+
+    .artigo-header h1 {
+        font-size: 2rem;
+    }
+
+    .artigo-meta {
+        gap: 15px;
+        font-size: 0.85rem;
+    }
+
+    .artigo-imagem-principal {
+        height: 250px;
+    }
+
+    .artigo-conteudo {
+        padding: 30px 25px;
+    }
+
+    .artigo-intro {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    .artigo-conteudo h2 {
+        font-size: 1.5rem;
+    }
+
+    .artigo-conteudo p {
+        font-size: 1.05rem;
+    }
+
+    .artigo-tags,
+    .artigo-compartilhar {
+        padding: 20px 25px;
+    }
+
+    .relacionados-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .artigo-cta {
+        padding: 30px 20px;
+    }
+
+    .artigo-cta h3 {
+        font-size: 1.6rem;
+    }
+
+    .artigo-destaque {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrumb {
+        font-size: 0.9rem;
+    }
+
+    .artigo-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .artigo-categoria {
+        font-size: 0.9rem;
+        padding: 6px 18px;
+    }
+
+    .artigo-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .artigo-lista-ordenada li {
+        padding-left: 50px;
+    }
+
+    .artigo-lista-ordenada li::before {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}

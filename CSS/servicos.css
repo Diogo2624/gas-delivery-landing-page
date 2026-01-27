@@ -385,13 +385,14 @@ img.product {
 
 /* Título da Pergunta (Summary) */
 .faq-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: #1e293b;
     cursor: pointer;
     list-style: none;
     text-align: left;
+    letter-spacing: 2px;
     padding: 22px 60px 22px 25px;
     position: relative;
     transition: all 0.3s ease;

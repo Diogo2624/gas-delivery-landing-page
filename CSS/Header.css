@@ -246,6 +246,7 @@ a, span.zap-button:visited {
 /* footer */
 
 .footer {
+    position: relative;
     display: flex;
     height: 16dvh;
     align-items: center;
@@ -253,6 +254,17 @@ a, span.zap-button:visited {
     gap: 2rem;
     margin-top: 2vh;
     background-color: #022f5e;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #ef4444);
+    transition: height 0.3s ease;
 }
 
 .footer a {
