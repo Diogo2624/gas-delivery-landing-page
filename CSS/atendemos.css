@@ -14,12 +14,13 @@
   letter-spacing: -0.5px;
   color: #111;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .areas-atendimento p {
   margin-bottom: 50px;
-  color: #666;
-  font-size: 16px;
+  color: #757474;
+  font-size: 20px;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
 }
